@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -30,7 +27,7 @@ public class GameOver : MonoBehaviour
         shotsHitText.text = "Number of Hits: " + (ScoreHolder.shotsFired - ScoreHolder.shotsMissed);
         try
         {
-        shotAccText.text = "Hit-Miss Ratio: " + (((ScoreHolder.shotsFired - ScoreHolder.shotsMissed) / ScoreHolder.shotsFired) * 100).ToString("F1") + "%";
+            shotAccText.text = "Hit-Miss Ratio: " + (((ScoreHolder.shotsFired - ScoreHolder.shotsMissed) / ScoreHolder.shotsFired) * 100).ToString("F1") + "%";
         }
         catch { }
     }

@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyBehavior : MonoBehaviour
@@ -170,7 +169,6 @@ public class EnemyBehavior : MonoBehaviour
                 }
                 else
                 {
-
                     enemyState = EnemyStates.FLY_IN;
                 }
                 
@@ -298,11 +296,4 @@ public class EnemyBehavior : MonoBehaviour
         canFireCapture = false;
         enemyState = EnemyStates.FLY_IN;
     }
-    /*
-    public void SpawnCapturedShip()
-    {
-        GameObject newDummyShip = Instantiate(dummyShip, spawnPoint.position, spawnPoint.rotation) as GameObject; //Spawn dummy ship object
-        newDummyShip.transform.parent = this.gameObject.transform.parent; //Make dummy ship child of ship that fired bullet
-        //Get dummyship to fly in
-    }*/
 }

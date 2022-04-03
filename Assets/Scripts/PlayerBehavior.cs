@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
@@ -12,10 +11,6 @@ public class Boundary
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerBehavior : MonoBehaviour
 {
-    bool isDragged;
-    Vector3 screenPoint;
-    Vector3 offset;
-
     //Bullet 
     public Transform[] bulletSpawns;
     public int bulletLevel = 1;
