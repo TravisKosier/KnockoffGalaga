@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 using UnityEngine.SceneManagement;
 
@@ -14,8 +12,6 @@ public class GameManager : MonoBehaviour
     static int shotsFired;
     static int shotsMissed;
     static int bulletLevel = 1;
-
-    int enemyAmount;
 
     int scoreToBonusLife = 30000;
 

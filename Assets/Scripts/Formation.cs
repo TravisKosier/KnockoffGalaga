@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 
 public class Formation : MonoBehaviour
@@ -103,11 +102,11 @@ public class Formation : MonoBehaviour
             }
         }
 
-                if (canDive)
-                {
-                    Invoke("SetDiving", Random.Range(3, 10));
-                    canDive = false;
-                }
+        if (canDive)
+        {
+            Invoke("SetDiving", Random.Range(3, 10));
+            canDive = false;
+        }
     }
 
     public IEnumerator ActivateSpread()

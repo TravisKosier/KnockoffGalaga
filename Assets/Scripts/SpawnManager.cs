@@ -185,10 +185,6 @@ public class SpawnManager : MonoBehaviour
         {
             Debug.LogError("<color=red>Too many fly ships</color>: " + currentFlyAmount + "/20");
         }
-        /*else
-        {
-            Debug.Log("Current Flies: " + currentFlyAmount);
-        }*/
 
         int currentWaspAmount = 0;
         for (int i = 0; i < waveList.Count; i++)
@@ -199,10 +195,6 @@ public class SpawnManager : MonoBehaviour
         {
             Debug.LogError("<color=red>Too many wasp ships</color>: " + currentWaspAmount + "/16");
         }
-        /*else
-        {
-            Debug.Log("Current Wasps: " + currentWaspAmount);
-        }*/
 
         int currentBossAmount = 0;
         for (int i = 0; i < waveList.Count; i++)
@@ -213,10 +205,6 @@ public class SpawnManager : MonoBehaviour
         {
             Debug.LogError("<color=red>Too many boss ships</color>: " + currentBossAmount + "/4");
         }
-        /*else
-        {
-            Debug.Log("Current Bosses: " + currentBossAmount);
-        }*/
     }
 
     void ReportToGameManager()
